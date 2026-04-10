@@ -110,7 +110,7 @@ document.getElementById('submitBtn').onclick = () => {
 function shareWechat() {
  const type = document.getElementById('type').innerText;
  const desc = document.getElementById('desc').innerText;
- const text = '我测出来是：' + type + '\n' + desc + '\n\nGPTI 大 A 股民性格测试，快来测测你是什么股神！\nhttps://stacy661997.github.io/Stacy/';
+ const text = '我测出来是：' + type + '\n' + desc + '\n\nGPTI 大 A 股民性格测试，快来测测你是什么股神！\nhttps://stacy661997.github.io/GPTI/';
  navigator.clipboard.writeText(text).then(() => {
   alert('✅ 已复制！\n\n1. 打开微信\n2. 粘贴到聊天或朋友圈\n3. 发送！');
  }).catch(() => {
@@ -134,7 +134,7 @@ if (navigator.share) {
  shareBtn.onclick = () => {
   const type = document.getElementById('type').innerText;
   const desc = document.getElementById('desc').innerText;
-  navigator.share({ title: 'GPTI 大 A 股民性格测试', text: '我测出来是：' + type + '\n' + desc, url: 'https://stacy661997.github.io/Stacy/' });
+  navigator.share({ title: 'GPTI 大 A 股民性格测试', text: '我测出来是：' + type + '\n' + desc, url: 'https://stacy661997.github.io/GPTI/' });
  };
  document.getElementById('shareArea').appendChild(shareBtn);
 }
